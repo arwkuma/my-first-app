@@ -1,0 +1,19 @@
+/* pre-loader */
+           #qLoverlay::after {
+               color: {color:Loading Screen Bar Color};
+               content: '{text:Pre Loader Text Message}';
+           }
+
+           (function () {
+    // # Pre loader
+    window.addEventListener('DOMContentLoaded', function() {
+        new QueryLoader2(document.querySelector("body"), {
+            barColor: "{color:Loading Screen Bar Color}",
+            backgroundColor: "{color:Loading Screen Background Color}",
+            percentage: false,
+            barHeight: 2,
+            minimumTime: 200,
+            fadeOutTime: 1000
+        });
+    });
+})();
