@@ -1,40 +1,49 @@
-/* pre-loader */
-           #qLoverlay::after {
-               color: {color:Loading Screen Bar Color};
-               content: '{text:Pre Loader Text Message}';
-           }
 
-           (function () {
-    // # Pre loader
-    window.addEventListener('DOMContentLoaded', function() {
-        new QueryLoader2(document.querySelector("body"), {
-            barColor: "{color:Loading Screen Bar Color}",
-            backgroundColor: "{color:Loading Screen Background Color}",
-            percentage: false,
-            barHeight: 2,
-            minimumTime: 200,
-            fadeOutTime: 1000
-        });
-    });
-})();
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
 
-h5 {
+body
+  font-family 'Amatic SC', sans-serif
+  font-size 100px
 
-}
+@keyframes squiggly-anim
+  0%
+    filter url('#squiggly-0')
 
-p {
+  25%
+    filter url('#squiggly-1')
 
-}
+  50%
+    filter url('#squiggly-2')
 
-li {
+  75%
+    filter url('#squiggly-3')
 
-}
+  100%
+    filter url('#squiggly-4')
 
-<!-- external stylesheets -->
-<link rel="stylesheet" href="//static.tumblr.com/honophf/oD9oz5mht/main.min.css">
-<script src="//static.tumblr.com/cmghtlm/otvnkkd1g/modernizr.js"></script>
-<script src="//static.tumblr.com/cmghtlm/evUnkz8ov/queryloader2.min.js" type="text/javascript"></script>
-<script src="//static.tumblr.com/vppzax2/6nOolnayz/resizesensor.js"></script>
-<script src="//static.tumblr.com/vppzax2/3myolnazi/elementqueries.js"></script>
+$squiggly
+  animation squiggly-anim 0.34s linear infinite
 
-<style type="text/css">
+body
+  line-height 100vh
+  background #111
+  color white
+
+.test
+  @extend $squiggly
+  display inline-block
+  vertical-align middle
+  width 100%
+
+  outline none
+  text-align center
+  line-height 1
+
+
+.small
+  font-size 0.5em
+
+.smaller
+  font-size 0.4em
+p
+  margin 0
