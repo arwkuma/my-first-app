@@ -1,9 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {margin:0;}
+body {
+  margin: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 1em;
+}
+
 
 .navbar {
   overflow: hidden;
@@ -38,7 +47,3 @@ body {margin:0;}
   max-width: 100%;
   height: auto;
 }
-
-</style>
-</head>
-<body>
