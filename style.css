@@ -47,3 +47,5 @@ nav li {
   max-width: 100%;
   height: auto;
 }
+
+#more {display: none;}
