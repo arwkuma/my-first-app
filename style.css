@@ -1,3 +1,5 @@
+#more {display: none;}
+
 body {
   margin: 0;
 }
@@ -47,5 +49,3 @@ nav li {
   max-width: 100%;
   height: auto;
 }
-
-#more {display: none;}
