@@ -1,5 +1,9 @@
 #more {display: none;}
 
+.toggle-text {
+  display: none;
+}
+
 body {
   margin: 0;
 }
