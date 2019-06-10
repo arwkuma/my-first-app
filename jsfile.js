@@ -8,3 +8,8 @@ function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
 }
+
+// Click on face for easter egg
+document.querySelector('#face').onclick = function() {
+    alert('Ouch! Stop poking me!');
+}
