@@ -1,175 +1,126 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Portfolio Irene Beer</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css" type="text/css">
+<script type="text/javascript" src="jsfile.js"></script>
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
-.mySlides {display: none}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Poppins", sans-serif}
 </style>
-<body class="w3-content w3-border-left w3-border-right">
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-light-grey w3-collapse w3-top" style="z-index:3;width:260px" id="mySidebar">
-  <div class="w3-container w3-display-container w3-padding-16">
-    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-transparent w3-display-topright"></i>
-    <h3>Rental</h3>
-    <h3>from $99</h3>
-    <h6>per night</h6>
-    <hr>
-    <form action="/action_page.php" target="_blank">
-      <p><label><i class="fa fa-calendar-check-o"></i> Check In</label></p>
-      <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckIn" required>
-      <p><label><i class="fa fa-calendar-o"></i> Check Out</label></p>
-      <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckOut" required>
-      <p><label><i class="fa fa-male"></i> Adults</label></p>
-      <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="6">
-      <p><label><i class="fa fa-child"></i> Kids</label></p>
-      <input class="w3-input w3-border" type="number" value="0" name="Kids" min="0" max="6">
-      <p><button class="w3-button w3-block w3-green w3-left-align" type="submit"><i class="fa fa-search w3-margin-right"></i> Search availability</button></p>
-    </form>
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="images\face_icon.jpg" id=face alt="A headshot of my face" title="This is me, myself and Irene." style="width:45%;" class="w3-round"><br><br>
+    <h4><b>PORTFOLIO</b></h4>
+    <p class="w3-text-grey">Irene Beer</p>
   </div>
   <div class="w3-bar-block">
-    <a href="#apartment" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-building"></i> Apartment</a>
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-16" onclick="document.getElementById('subscribe').style.display='block'"><i class="fa fa-rss"></i> Subscribe</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-envelope"></i> Contact</a>
+    <a href="index.html" "#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding text-dark-purple"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+    <a href="index.html" "#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right text-dark-purple"></i>ABOUT</a>
+    <a href="index.html" "#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right text-dark-purple"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large">
+
+    <a href="https://www.linkedin.com/in/annemaria-beer-679135105/"<i class="fa fa-linkedin w3-hover-opacity"></i> </a>
+    <a href="https://www.instagram.com/arwkuma/"<i class="fa fa-instagram w3-hover-opacity"></i></a>
+
   </div>
 </nav>
 
-<!-- Top menu on small screens -->
-<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <span class="w3-bar-item">Rental</span>
-  <a href="javascript:void(0)" class="w3-right w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-</header>
-
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main w3-white" style="margin-left:260px">
+<div class="w3-main" style="margin-left:300px">
 
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:80px"></div>
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="images\face_icon.jpg" id=face alt="A headshot of my face" title="This is me, myself and Irene." style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
 
-  <!-- Slideshow Header -->
-  <div class="w3-container" id="apartment">
-    <h2 class="w3-text-green">The Apartment</h2>
-    <div class="w3-display-container mySlides">
-    <img src="images\erkenning_logo.jpg" style="width:100%;margin-bottom:-6px">
-      <div class="w3-display-bottomleft w3-container w3-black">
-        <p>Living Room</p>
+      <!-- Slideshow Header -->
+      <div class="w3-container">
+        <h2 class="w3-text-coral"><br /><br /><b>Erkenning</b></h2>
+
+        <p> <br /><br /> Voor het eenpersoonsbedrijf Erkenning heb ik een logo ontworpen. De dame die het bedrijft runt had nog geen logo en wilde graag een logo dat bij haar past en bij de betekenis van haar bedrijf past. <br /><br />
+    Ik heb een collega op mijn werk die wat moeite heeft met haar logo. Ik heb met haar overlegd wat ze wou hebben. Ze wilt graag een stoer logo, vind de kleur rood mooi en houd van de sterrenvorm. Daarnaast is ze trots op waar ze vandaan komt. Het moeilijke is dat ze wilt dat het haar persoonlijkheid uitstraalt maar ook de betekenis van haar bedrijf doorgeeft genaamd Erkenning. <br /><br />
+    Ik heb voor haar drie schetsen gemaakt dat op verschillende manieren “erkenning” uitstraalt dat past bij haar smaak. Ik heb me bedacht om de ster van de vlag van haar woonplaats te gebruiken. Ze heeft voor de derde schets gekozen en ik heb het uitgewerkt met een dikker lettertype om het stoerder uit te laten zien. Ik heb het met het programma Adobe Illustrator haar logo ontworpen.
+     <br /><br /></p>
+
+        <div class="w3-display-container mySlides">
+        <img src="images\erkenning_schets.jpg" style="width:100%;margin-bottom:-6px">
+          <div class="w3-display-bottomleft w3-container w3-black">
+            <p>Schets</p>
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+        <img src="images\erkenning_fonts.jpg" style="width:100%;margin-bottom:-6px">
+          <div class="w3-display-bottomleft w3-container w3-black">
+            <p>Fonts</p>
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+        <img src="images\erkenning_logo.jpg" style="width:100%;margin-bottom:-6px">
+          <div class="w3-display-bottomleft w3-container w3-black">
+            <p>Logo</p>
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+        <img src="images\erkenning_businesscard.jpg" style="width:100%;margin-bottom:-6px">
+          <div class="w3-display-bottomleft w3-container w3-black">
+            <p>Card model</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="w3-display-container mySlides">
-    <img src="images\erkenning_fonts.jpg" style="width:100%;margin-bottom:-6px">
-      <div class="w3-display-bottomleft w3-container w3-black">
-        <p>Dining Room</p>
+
+    <!-- !Menu options! -->
+
+      <div class="w3-row-padding w3-section">
+        <div class="w3-col s3">
+          <img class="demo w3-opacity w3-hover-opacity-off"
+          src="images\erkenning_schets.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Schets">
+        </div>
+        <div class="w3-col s3">
+          <img class="demo w3-opacity w3-hover-opacity-off"
+          src="images\erkenning_fonts.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Fonts">
+        </div>
+        <div class="w3-col s3">
+          <img class="demo w3-opacity w3-hover-opacity-off"
+          src="images\erkenning_logo.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)" title="Logo">
+        </div>
+        <div class="w3-col s3">
+          <img class="demo w3-opacity w3-hover-opacity-off"
+          src="images\erkenning_businesscard.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="Business card model">
+        </div>
       </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding ">
+    <div class="w3-third">
+      <h3>Made with Github, Atom, Hyper & some love.</h3>
     </div>
-    <div class="w3-display-container mySlides">
-    <img src="images\erkenning_schets.jpg" style="width:100%;margin-bottom:-6px">
-      <div class="w3-display-bottomleft w3-container w3-black">
-        <p>Bedroom</p>
-      </div>
+
+    <div class="w3-third">
+      <a href="index.html" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-left w3-margin-right"></i>Go Back</a>
     </div>
-    <div class="w3-display-container mySlides">
-    <img src="images/erkenning_businesscard.jpg" style="width:100%;margin-bottom:-6px">
-      <div class="w3-display-bottomleft w3-container w3-black">
-        <p>Living Room II</p>
-      </div>
-    </div>
+
   </div>
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="images/erkenning_logo.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
-    </div>
-    <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="images/erkenning_fonts.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Dining room">
-    </div>
-    <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="images/erkenning_schets.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)" title="Bedroom">
-    </div>
-    <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="images/erkenning_businesscard.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="Second Living Room">
-    </div>
-  </div>
+  </footer>
 
-  <div class="w3-container">
-    <h4><strong>The space</strong></h4>
-    <div class="w3-row w3-large">
-      <div class="w3-col s6">
-        <p><i class="fa fa-fw fa-male"></i> Max people: 4</p>
-        <p><i class="fa fa-fw fa-bath"></i> Bathrooms: 2</p>
-        <p><i class="fa fa-fw fa-bed"></i> Bedrooms: 1</p>
-      </div>
-      <div class="w3-col s6">
-        <p><i class="fa fa-fw fa-clock-o"></i> Check In: After 3PM</p>
-        <p><i class="fa fa-fw fa-clock-o"></i> Check Out: 12PM</p>
-      </div>
-    </div>
-    <hr>
-
-    <h4><strong>Amenities</strong></h4>
-    <div class="w3-row w3-large">
-      <div class="w3-col s6">
-        <p><i class="fa fa-fw fa-shower"></i> Shower</p>
-        <p><i class="fa fa-fw fa-wifi"></i> WiFi</p>
-        <p><i class="fa fa-fw fa-tv"></i> TV</p>
-      </div>
-      <div class="w3-col s6">
-        <p><i class="fa fa-fw fa-cutlery"></i> Kitchen</p>
-        <p><i class="fa fa-fw fa-thermometer"></i> Heating</p>
-        <p><i class="fa fa-fw fa-wheelchair"></i> Accessible</p>
-      </div>
-    </div>
-    <hr>
-
-    <h4><strong>Extra Info</strong></h4>
-    <p>Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i class="fa fa-cc-paypal w3-large"></i></p>
-    <hr>
-
-    <h4><strong>Rules</strong></h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p>Subscribe to receive updates on available dates and special offers.</p>
-    <p><button class="w3-button w3-green w3-third" onclick="document.getElementById('subscribe').style.display='block'">Subscribe</button></p>
-  </div>
-  <hr>
-
-  <!-- Contact -->
-  <div class="w3-container" id="contact">
-    <h2>Contact</h2>
-    <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-    <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-    <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-    <p>Questions? Go ahead, ask them:</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-    <button type="submit" class="w3-button w3-green w3-third">Send a Message</button>
-    </form>
-  </div>
-
-  <footer class="w3-container w3-padding-16" style="margin-top:32px">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></footer>
+  <div class="w3-black w3-center w3-padding-24"></div>
 
 <!-- End page content -->
-</div>
-
-<!-- Subscribe Modal -->
-<div id="subscribe" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom w3-padding-large">
-    <div class="w3-container w3-white w3-center">
-      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-button w3-xlarge w3-right w3-transparent"></i>
-      <h2 class="w3-wide">SUBSCRIBE</h2>
-      <p>Join our mailing list to receive updates on available dates and special offers.</p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-      <button type="button" class="w3-button w3-padding-large w3-green w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
-    </div>
-  </div>
 </div>
 
 <script>
