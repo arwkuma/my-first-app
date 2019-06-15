@@ -3,6 +3,10 @@
   height: auto;
 }
 
+img {
+    image-orientation: from-image;
+}
+
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
